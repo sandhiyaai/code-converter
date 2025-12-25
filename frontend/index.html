@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Code Converter</h1>
+
+    <div class="row">
+        <label>Source Language</label>
+        <select id="sourceLanguage">
+            <option value="python">Python</option>
+        </select>
+
+        <label>Target Language</label>
+        <select id="targetLanguage">
+            <option value="java">Java</option>
+        </select>
+    </div>
+
+    <!-- EDITOR -->
+    <div class="editor">
+        <div id="lineNumbers">1</div>
+        <textarea id="inputCode" placeholder="Enter your code here..."></textarea>
+    </div>
+
+    <button id="convertBtn" onclick="convertCode()" disabled>Convert</button>
+
+    <textarea id="outputCode" placeholder="Converted code will appear here..." readonly></textarea>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
