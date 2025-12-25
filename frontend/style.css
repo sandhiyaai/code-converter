@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-right: 5px;
+}
+.editor {
+    display: flex;
+    height: 220px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 14px;
+    overflow: hidden;   /* 🔥 THIS FIXES OVERFLOW */
+}
+
+#lineNumbers {
+    width: 45px;
+    padding: 10px 5px;
+    text-align: right;
+    background: #f0f0f0;
+    color: #666;
+    line-height: 20px;
+    white-space: pre;
+    overflow: hidden;   /* 🔥 LOCK LINE NUMBERS */
+    user-select: none;
+}
+
+#inputCode {
+    flex: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    line-height: 20px;  /* 🔥 MUST MATCH lineNumbers */
+    font-family: monospace;
+    font-size: 14px;
+    overflow-y: auto;
+}
+
+/* ===== EDITOR ===== */
+
+/*.editor {
+    display: flex;
+    border: 1px solid #ccc;
+    height: 200px;
+    font-family: monospace;
+}
+
+#lineNumbers {
+    background: #f0f0f0;
+    padding: 10px 6px;
+    text-align: right;
+    color: #666;
+    user-select: none;
+    line-height: 20px;
+    min-width: 40px;
+}
+
+#inputCode {
+    flex: 1;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 20px;
+    white-space: pre;
+    overflow-wrap: normal;
+    overflow-x: auto;
+}
+
+/* ===== BUTTON & OUTPUT ===== */
+
+button {
+    width: 100%;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#outputCode {
+    width: 100%;
+    height: 180px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+
+
