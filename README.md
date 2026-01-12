@@ -41,6 +41,7 @@ This tool is built using **Spring Boot** for the backend and a **web-based front
 * Exception handling (`try/except`)
 * Global keyword
 * Python collections (list, dict, tuple)
+* User input handling (`input()`, `int(input())`, etc.)
 * Error detection (syntax validation)
 **These features are intentionally not supported**, as the project is a rule-based converter, not a full compiler or error detector.
 
