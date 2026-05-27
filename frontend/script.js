@@ -6,7 +6,7 @@ const convertBtn = document.getElementById("convertBtn");
 function convertCode() {
     const code = inputArea.value;
 
-    fetch("http://localhost:8080/api/convert", {
+    fetch("https://code-converter-production-d5bd.up.railway.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
