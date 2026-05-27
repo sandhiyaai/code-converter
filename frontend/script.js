@@ -15,10 +15,10 @@ function convertCode() {
             targetLanguage: "java"
         })
     })
-    .then(res => res.json())
+  .then(res => res.text())
     .then(data => {
-        document.getElementById("outputCode").value = data.output;
-    })
+    document.getElementById("outputCode").value = data;
+})
     .catch(() => alert("Backend not connected"));
 }
 
